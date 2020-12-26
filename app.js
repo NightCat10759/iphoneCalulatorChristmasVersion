@@ -78,9 +78,12 @@ const getResultOfOperationAsStr = () => {
         newValueNum = valueNumInMemory * currentValueNum;
     } else if (operatorInMemory === 'division') {
         newValueNum = valueNumInMemory / currentValueNum;
-    }
+    }   
 
-    return newValueNum.toString();
+    
+        return newValueNum.toString();
+    
+
 };
 
 const handleOperatorClick = (operation) => {
@@ -143,7 +146,15 @@ divisionEl.addEventListener('click', () => {
 });
 equalEl.addEventListener('click', () => {
     if (valueStrInMemory) {
-        setStrAsValue(getResultOfOperationAsStr());
+        if(getResultOfOperationAsStr()=="87") {
+            valueEl.textContent = '';
+            var treeImg = document.createElement("img");
+            treeImg.src="./tree.png";
+            treeImg.width="180";
+            valueEl.appendChild(treeImg);
+        } else{
+            setStrAsValue(getResultOfOperationAsStr());
+        }
         valueStrInMemory = null;
         operatorInMemory = null;
     }

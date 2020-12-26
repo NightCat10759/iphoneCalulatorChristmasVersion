@@ -36,6 +36,12 @@ body {
     margin-right: 20px;
 }
 
+.value img{
+    position: relative;
+    transform: translatey(-30%);
+    left:8%;
+}
+
 .buttons-container {
     display: grid;/*二維排版*/
    grid-template-rows: repeat(5, 1fr);
