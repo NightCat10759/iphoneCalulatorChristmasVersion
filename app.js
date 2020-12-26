@@ -149,7 +149,7 @@ equalEl.addEventListener('click', () => {
         if(getResultOfOperationAsStr()=="87") {
             valueEl.textContent = '';
             var treeImg = document.createElement("img");
-            treeImg.src="https://raw.githubusercontent.com/NightCat10759/iphoneCalulatorChristmasVersion/main/tree.PNG";
+            treeImg.src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.0-9/133066276_3580117955428844_6689451742567873422_n.jpg?_nc_cat=107&ccb=2&_nc_sid=730e14&_nc_ohc=sWzJM2OgQNEAX-CxfxU&_nc_ht=scontent.fkhh1-2.fna&oh=7b995e33db0eecca1517ebff9d8a80f4&oe=600C18A2";
             treeImg.width="180";
             valueEl.appendChild(treeImg);
         } else{
