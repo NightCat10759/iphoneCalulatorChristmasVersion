@@ -149,7 +149,7 @@ equalEl.addEventListener('click', () => {
         if(getResultOfOperationAsStr()=="87") {
             valueEl.textContent = '';
             var treeImg = document.createElement("img");
-            treeImg.src="./tree.png";
+            treeImg.src="https://raw.githubusercontent.com/NightCat10759/iphoneCalulatorChristmasVersion/main/tree.PNG";
             treeImg.width="180";
             valueEl.appendChild(treeImg);
         } else{
